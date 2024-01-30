@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".Activity1"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/new_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="10dp"
+
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/green"
+        android:text="Tip Caculator"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="150dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Check Amount"
+            android:background="@color/green"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/amount"
+            android:inputType="numberDecimal"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:text="Number Of People"
+            android:textColor="@color/black"
+            android:layout_width="150dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/people"
+            android:inputType="numberDecimal"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:text="Tip Percentage%"
+            android:textColor="@color/black"
+            android:layout_width="150dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/tip"
+            android:inputType="numberDecimal"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/dialButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dial"
+            android:padding="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/textColor"
+            android:background="@color/buttonBackground" />
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/textColor"
+            android:background="@color/buttonBackground" />
+
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:text="TIP"
+        android:textColor="@color/textColor"
+        android:background="@color/buttonBackground" />
+        <Button
+            android:id="@+id/webButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/textColor"
+            android:background="@color/buttonBackground"
+            android:text="WEB" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@color/green"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Total Bill"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_bill"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@color/green"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Total per Person"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_per_person"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/black"
+
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+            android:text="Total Tip"
+            android:textColor="@color/black"
+            android:layout_width="80dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:background="@color/green"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/total_tip"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_width="80dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+
+            android:gravity="center" />
+
+        <TextView
+            android:text="Tip per Person"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_width="80dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_height="35dp"
+            android:background="@color/green"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/tip_per_person"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_width="80dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
